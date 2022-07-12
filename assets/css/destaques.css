@@ -1,0 +1,48 @@
+.destaques {
+  /*background: red;  só para verificar o que Destaques esta na Tela*/
+  display:grid;/*Pedimos que a class destaques se comporte como Grid*/
+  grid-template-columns: 25% 25% 25% 25%;/*Definimos 4 colunas*/
+  grid-template-rows: 33.33% 33.33% 33.33% 33.33%;/*100% dividimos por 3 Linh*/
+  height: calc(100vh - 50px); /*A sessão Destaques deve começar após o CABEÇALHO e para isso 100vh - a parte do cabçlho que é 50px */
+}
+
+.destaques__principal { /*O __ aqui é que o principal é filho do destaque(BEM)*/
+    background: url(../img/fortnite.jpg) center / cover no-repeat;
+    /*background-position: center; /*Centraliza a imagem do Fortnite* Subistituido linha acima*/
+    /*background-repeat: no-repeat;/*Não repete a imagem no último quadrado* Subistituido linha acima*/
+    /*background-size: cover; /*Imagem ocupa TODO Backgound, cobre toda a div* Subistituido linha acima*/
+    grid-column: 1 / 4; /*Começa na Coluna 1 e Termina na Coluna 4*/
+    grid-row: 1 / 3; /*Começa na Linha 1 e Termina na Linha 3*/
+}
+
+ /*Usamos o :nth-child(2) Por que são 4 secundários e no HTML o PUBG é o segundo */
+.destaques__secundario:nth-child(2) {
+  background: url(../img/pubg.jpg) center / cover no-repeat;
+  /*background-position: center; /*Centraliza a imagem do Fortnite* Subistituido linha acima*/
+    /*background-repeat: no-repeat;/*Não repete a imagem no último quadrado* Subistituido linha acima*/
+    /*background-size: cover; /*Imagem ocupa TODO Backgound, cobre toda a div* Subistituido linha acima*/
+  grid-column: 4 / 4; /*Começa na Coluna 4 e Termina na Coluna 4*/
+  grid-row: 1 / 1; /*Começa na Linha 1 e Termina na Linha 1*/
+}
+/*Usamos o :nth-child(3) Por que são 4 secundários e no HTML o SLACK é o terceiro */
+.destaques__secundario:nth-child(3) {
+                                    /*Centraliza / Ocupa toda DIV e Não repete*/ 
+  background: url(../img/slack.png) center / cover no-repeat;
+  grid-column: 4 / 4;/*Slack deve começar na 4 Posição da Coluna e Terminar na 4 Coluna*/
+  grid-row: 2 / 2;/*Slack deve começar na 2 Linha Posição e terminar na 2 linha*/
+}
+/*Usamos o :nth-child(4) Por que são 4 secundários e no HTML o WHATSAPP é o quarto */
+.destaques__secundario:nth-child(4) { 
+                                      /*Centraliza / Ocupa toda DIV e Não repete*/ 
+  background: url(../img/whatsapp.png) center / cover no-repeat;
+  grid-column: 4 / 4; /*whatsapp deve começar na 4 Posição da Coluna e Terminar na 4 Coluna*/
+  grid-row: 3 / 3; /*whatsapp deve começar na 2 Linha Posição e terminar na 2 linha*/
+}
+/*Usamos o :nth-child(5) Por que são 4 secundários e no HTML o CS-GO é o quinto */
+.destaques__secundario:nth-child(5) {
+                                    /*Centraliza / Ocupa toda DIV e Não repete*/ 
+  background: url(../img/cs-go.jpg) center / cover no-repeat;
+  grid-column: 3 / 3; /*CS-GO deve começar na 3 Posição da Coluna e Terminar na 3 Coluna*/
+  grid-row: 3 / 3; /*CS-GO deve começar na 3 Linha Posição e terminar na 3 linha*/
+}
+
