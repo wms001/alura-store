@@ -1,20 +1,23 @@
 .app {
     background: #f1f1f1;
-    display: grid;  
+    display: grid;
     font-family: Arial, Helvetica, sans-serif;
-    grid-template-areas: /*Esta propriedade recebe Strings, onde passamos todas as areas que existirão no site, como abaixo*/ 
-         "cabecalho"
-         "conteudo"
-         "rodape";
-    grid-template-columns: auto; /* Como só temos 1 coluna, definimos o tamanho como auto. Uma coluna que contém Cabeçalho, Conteúdo e Rodapé */
-    grid-template-rows: 50px 100vh auto; /*Temos 3 Linhas e Devemos definir 3 valores: Cabeçalho (50 px), Conteudo(100Vh Ocupa todo o espaço) e Rodapé com auto para o que sobra*/
-         
-} 
+    grid-template-areas:
+        /*Esta propriedade recebe Strings, onde passamos todas as areas que existirão no site, como abaixo*/
+        "cabecalho"
+        "conteudo"
+        "rodape";
+    grid-template-columns: auto;
+    /* Como só temos 1 coluna, definimos o tamanho como auto. Uma coluna que contém Cabeçalho, Conteúdo e Rodapé */
+    grid-template-rows: 50px 100vh auto;
+    /*Temos 3 Linhas e Devemos definir 3 valores: Cabeçalho (50 px), Conteudo(100Vh Ocupa todo o espaço) e Rodapé com auto para o que sobra*/
+
+}
 
 .cabecalho {
     grid-area: cabecalho;
 }
- 
+
 .conteudo {
     grid-area: conteudo;
 }
