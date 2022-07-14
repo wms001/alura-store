@@ -25,7 +25,7 @@
 }
 
 @media screen and (min-width: 768px) { /* Para Tablets*/
-  .destaques__principal, {
+  .destaques__principal {
     grid-column: 1 / 4;
   }
   .destaques__secundario:nth-child(2) {
